@@ -1,6 +1,6 @@
----------------
+----------------
 Theory and practical use of HTML, CSS, and basic JS on the browser.
----------------
+----------------
 This goal is meant to cover the following topics:
 
 - Layout (float, display, position, flex box, etc)
@@ -11,4 +11,4 @@ This goal is meant to cover the following topics:
 - Event listeners (JS)
 
 To put in practice all these concepts Sil will create a simple static website.
----------------
+----------------
