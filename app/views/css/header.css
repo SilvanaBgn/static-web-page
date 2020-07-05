@@ -1,0 +1,47 @@
+/* ---------------------HEADER--------------------- */
+header {
+  background-color: #fff;
+  box-shadow: #efefef 0px 2px 10px;
+  width: 100%;
+  height: 55px;
+  position: fixed;
+  display: flex;
+  justify-content: flex-end;
+}
+.logo {
+  background-image: url("../../assets/logo.svg");
+  background-repeat: no-repeat;
+  background-position: 20px center;
+  background-size: 80px 60px;
+}
+header > button {
+  border: none;
+  background-color: inherit;
+  padding: 15px;
+  cursor: pointer;
+}
+/* ---------------------MENU--------------------- */
+header nav {
+  background-color: lightblue;
+  position: absolute;
+  top: 55px;
+  width: 200px;
+  padding: 15px;
+}
+#menu {
+  list-style: none;
+}
+.menu_link {
+  text-decoration: none;
+  color: #000;
+  line-height: 35px;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+}
+.menu_link:hover {
+  background-color: white;
+}
+.menu_link > img {
+  padding-right: 8px;
+}

@@ -2,13 +2,64 @@
 <html>
   <head>
     <meta charset="UTF-8" />
+    <!-- Meta for responsive behavior: -->
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Icon for the window tab page: -->
+    <link rel="icon" type="image/svg" href="app/assets/logo.svg" />
+    <!-- CSS: -->
     <link rel="stylesheet" href="app/views/css/normalize.css" />
-    <link rel="stylesheet" href="app/views/css/styles.css" />
+    <link rel="stylesheet" href="app/views/css/header.css" />
+    <link rel="stylesheet" href="app/views/css/footer.css" />
+    <!-- JS: -->
   </head>
   <body>
-    <header class="img_nav_logo"></header>
-    <section id="home_section" style="height: 1000px;"></section>
+    <header class="logo">
+      <button id="menu_button" alt="Menú" type="menu">
+        <img src="app/assets/menu-closed.svg" />
+      </button>
+      <nav>
+        <ol id="menu">
+          <li class="menu_item">
+            <a class="menu_link" href="#home_section">
+              <img src="app/assets/home.svg" />
+              Inicio
+            </a>
+          </li>
+          <li class="menu_item">
+            <a class="menu_link" href="#about_us_section">
+              <img src="app/assets/about-us.svg" />
+              Nosotros
+            </a>
+          </li>
+          <li class="menu_item">
+            <a class="menu_link" href="#location_section">
+              <img src="app/assets/location.svg" />
+              Ubicación
+            </a>
+          </li>
+          <li class="menu_item">
+            <a class="menu_link" href="#hours_section">
+              <img src="app/assets/hours.svg" />
+              Horarios
+            </a>
+          </li>
+          <li class="menu_item">
+            <a class="menu_link" href="#contact_section">
+              <img src="app/assets/contact.svg" />
+              Contacto
+            </a>
+          </li>
+        </ol>
+      </nav>
+    </header>
+    <section
+      id="home_section"
+      style="height: 1000px; background: grey;"
+    ></section>
+    <section
+      id="about_us_section"
+      style="height: 100px; background: yellowgreen;"
+    ></section>
     <footer>
       <div>
         <p data-year="&nbsp;2020">(C) Copyright</p>
