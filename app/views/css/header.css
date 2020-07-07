@@ -16,10 +16,16 @@ header {
 }
 header > button {
   border: none;
+  outline: none;
   background-color: inherit;
   padding: 15px;
   cursor: pointer;
 }
+/* Implementación button con background */
+/* header > button {
+  background-image: url("../../assets/menu-closed.svg");
+  background-repeat: no-repeat;
+} */
 /* ---------------------MENU--------------------- */
 header nav {
   background-color: lightblue;
@@ -27,7 +33,14 @@ header nav {
   top: 55px;
   width: 200px;
   padding: 15px;
+  left: 100%;
+  transition: left 0.5s;
 }
+.nav_opened {
+  left: calc(100% - 200px);
+  transition: left 1s;
+}
+
 #menu {
   list-style: none;
 }
