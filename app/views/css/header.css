@@ -21,11 +21,7 @@ header > button {
   padding: 15px;
   cursor: pointer;
 }
-/* Implementación button con background */
-/* header > button {
-  background-image: url("../../assets/menu-closed.svg");
-  background-repeat: no-repeat;
-} */
+
 /* ---------------------MENU--------------------- */
 header nav {
   background-color: lightblue;
@@ -41,10 +37,7 @@ header nav {
   transition: left 1s;
 }
 
-#menu {
-  list-style: none;
-}
-.menu_link {
+nav a {
   text-decoration: none;
   color: #000;
   line-height: 35px;
@@ -52,9 +45,9 @@ header nav {
   display: flex;
   align-items: center;
 }
-.menu_link:hover {
+nav a:hover {
   background-color: white;
 }
-.menu_link > img {
+nav a > img {
   padding-right: 8px;
 }
