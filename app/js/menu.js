@@ -1,5 +1,4 @@
-const MENU_OPENED_PATH = "app/assets/menu-opened.svg",
-  MENU_CLOSED_PATH = "app/assets/menu-closed.svg";
+const ASSETS_PATH = "app/assets/";
 
 let menuButton = document.getElementById("menu_button");
 menuButton.addEventListener("click", toogleMenu, true);
@@ -9,11 +8,14 @@ function toogleMenu(e) {
     menuButtonImg = menuButton.getElementsByTagName("img")[0];
   const menuOpened = menuNav.classList.contains("nav_opened");
 
+  //update nav state (class) and button's img:
   if (menuOpened) {
-    menuNav.classList.remove("nav_opened"); //update state (class) of nav
-    menuButtonImg.src = MENU_CLOSED_PATH; //update button's icon
+    menuNav.classList.remove("nav_opened");
+    menuNav.classList.add("nav_closed");
+    menuButtonImg.src = ASSETS_PATH + "menu-closed.svg";
   } else {
-    menuNav.classList.add("nav_opened"); //update state (class) of nav
-    menuButtonImg.src = MENU_OPENED_PATH; //update button's icon
+    menuNav.classList.remove("nav_closed");
+    menuNav.classList.add("nav_opened");
+    menuButtonImg.src = ASSETS_PATH + "menu-opened.svg";
   }
 }
