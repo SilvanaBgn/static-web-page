@@ -25,13 +25,11 @@ footer p:nth-child(1)::after {
 footer p:nth-child(2)::before {
   content: attr(data-splitter);
 }
+footer p:last-child {
+  float: right;
+}
 
 /* <p>: Gracias por confiar en nosotros */
-@media (min-width: 380px) {
-  footer p:last-child {
-    float: right;
-  }
-}
 footer p:last-child::before {
   content: "• ";
 }
@@ -39,7 +37,8 @@ footer p:last-child::after {
   content: " •";
 }
 @media (max-width: 380px) {
-  footer p {
+  footer p,
+  footer p:last-child {
     float: none;
     clear: both;
     text-align: center;
