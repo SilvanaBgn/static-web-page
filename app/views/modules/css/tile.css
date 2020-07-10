@@ -1,0 +1,38 @@
+#tiles {
+  display: flex;
+  justify-content: space-around;
+}
+p.tile_p {
+  font-size: 15px;
+  line-height: 20px;
+  text-align: center;
+  width: 100%;
+  height: auto;
+}
+img.tile_img {
+  width: 100%; /*TODO cambiar tamaño imágenes originales, para que el 100% sea 120x120 px*/
+  height: auto;
+  display: block;
+  margin: auto;
+}
+@media (min-width: 680px) {
+  p.tile_p {
+    width: 180px;
+  }
+  img.tile_img {
+    height: 120px;
+    width: 120px;
+  }
+}
+
+/*Unsemantic grid system*/
+img.tile_img.grid_img,
+p.tile_p.grid_p {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+p.tile_p.grid_p {
+  width: 140px;
+  text-align: center;
+}

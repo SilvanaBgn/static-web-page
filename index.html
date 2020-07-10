@@ -2,16 +2,82 @@
 <html>
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1,
+    maximum-scale=1"
+    />
     <link rel="stylesheet" href="app/views/css/normalize.css" />
+    <!-- Unsemantic grid system -->
+    <!-- <link rel="stylesheet" href="app/views/css/unsemantic-master/assets/stylesheets/unsemantic-grid-responsive-tablet-no-ie7.css" /> -->
+
+    <!-- 960 grid system -->
+    <!-- <link rel="stylesheet" type="text/css" media="all" href="app/views/css/960-grid/reset.css" />
+    <link rel="stylesheet" type="text/css" media="all" href="app/views/css/960-grid/text.css" />
+    <link rel="stylesheet" type="text/css" media="all" href="app/views/css/960-grid/960.css" /> -->
+
     <link rel="stylesheet" href="app/views/css/header.css" />
     <link rel="stylesheet" href="app/views/css/footer.css" />
+    <link rel="stylesheet" href="app/views/modules/css/tile.css" />
   </head>
   <body>
     <header>
       <img class="logo" alt="Logo de LTV Service" src="app/assets/logo.svg" />
     </header>
-    <section id="home_section" style="height: 1000px;"></section>
+    <!-- Unsemantic grid system -->
+    <!-- <section id="home_section" class="grid-container">
+      <div class="grid-33">
+        <img class="tile_img grid_img" src="app/assets/tile1.png" />
+        <p class="tile_p grid_p">Presupuestos<br />SIN CARGO</p>
+      </div>
+      <div class="grid-33">
+        <img class="tile_img grid_img" src="app/assets/tile2.png" />
+        <p class="tile_p grid_p">Trabajamos con las ÚLTIMAS TECNOLOGÍAS</p>
+      </div>
+      <div class="grid-33">
+        <img class="tile_img grid_img" src="app/assets/tile3.png" />
+        <p class="tile_p grid_p">Más de 20.000 CLIENTES confían en nosotros</p>
+      </div>
+    </section> -->
+
+    <!-- 960 grid system -->
+    <!-- <section id="home_section" class="container_3">
+      <div class="grid_1">
+        <img class="tile_img grid_img" src="app/assets/tile1.png" />
+        <p class="tile_p grid_p">Presupuestos<br />SIN CARGO</p>
+      </div>
+      <div class="grid_1">
+        <img class="tile_img grid_img" src="app/assets/tile2.png" />
+        <p class="tile_p grid_p">Trabajamos con las ÚLTIMAS TECNOLOGÍAS</p>
+      </div>
+      <div class="grid_1">
+        <img class="tile_img grid_img" src="app/assets/tile3.png" />
+        <p class="tile_p grid_p">Más de 20.000 CLIENTES confían en nosotros</p>
+      </div>
+    </section> -->
+
+    <!-- Forma clásica -->
+    <section id="home_section">
+      <aside id="tiles">
+        <p class="tile_p">
+          <img class="tile_img" src="app/assets/tile1.png" />
+          Presupuestos<br />SIN CARGO
+        </p>
+        <p class="tile_p">
+          <img
+            class="tile_img"
+            src="app/assets/tile2.png"
+            height="120px"
+            width="120px;"
+          />
+          Trabajamos con las ÚLTIMAS TECNOLOGÍAS
+        </p>
+        <p class="tile_p">
+          <img class="tile_img" src="app/assets/tile3.png" />
+          Más de 20.000 CLIENTES confían en nosotros
+        </p>
+      </aside>
+    </section>
     <footer>
       <div>
         <p data-year="&nbsp;2020">(C) Copyright</p>
