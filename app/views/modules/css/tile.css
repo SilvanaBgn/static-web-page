@@ -1,27 +1,42 @@
-#tiles {
+aside#tiles {
   display: flex;
   justify-content: space-around;
+  padding-top: 15px;
 }
 p.tile_p {
-  font-size: 15px;
-  line-height: 20px;
+  font-size: 10px;
+  line-height: 15px;
   text-align: center;
-  width: 100%;
+  margin: 0 3px;
+  width: 80%;
   height: auto;
+  min-width: 85px;
 }
 img.tile_img {
-  width: 100%; /*TODO cambiar tamaño imágenes originales, para que el 100% sea 120x120 px*/
+  width: inherit;
+  max-width: 120px;
   height: auto;
   display: block;
   margin: auto;
 }
+
 @media (min-width: 680px) {
   p.tile_p {
     width: 180px;
+    font-size: 15px;
+    line-height: 20px;
+    margin: 0 10px;
   }
   img.tile_img {
     height: 120px;
     width: 120px;
+  }
+}
+@media (min-width: 420px) and (max-width: 680px) {
+  p.tile_p {
+    font-size: 2.4vw;
+    line-height: 3vw;
+    margin: 0 6px;
   }
 }
 
