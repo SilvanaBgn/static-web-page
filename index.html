@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="app/views/modules/css/tile.css" />
   </head>
   <body>
-    <header>
+    <header tabindex="1">
       <img class="logo" alt="Logo de LTV Service" src="app/assets/logo.svg" />
     </header>
     <!-- Unsemantic grid system -->
@@ -57,23 +57,33 @@
     </section> -->
 
     <!-- Forma clásica -->
-    <section id="home_section">
-      <aside id="tiles">
-        <p class="tile_p">
-          <img class="tile_img" src="app/assets/tile1.png" />
-          Presupuestos<br />SIN CARGO
-        </p>
-        <p class="tile_p">
+    <section id="home_section" role="region" title="Sección Home" tabindex="2">
+      <aside id="tiles" aria-label="Ventajas competitivas" role="grid">
+        <p id="tile_p_1" class="tile_p" tabindex="2.1.1">
           <img
             class="tile_img"
+            title="Ventaja 1"
+            aria-describedby="tile_p_1"
+            src="app/assets/tile1.png"
+          />
+          Presupuestos<br />SIN CARGO
+        </p>
+        <p id="tile_p_2" class="tile_p" tabindex="2.1.2">
+          <img
+            class="tile_img"
+            title="Ventaja 2"
+            aria-describedby="tile_p_2"
             src="app/assets/tile2.png"
-            height="120px"
-            width="120px;"
           />
           Trabajamos con las ÚLTIMAS TECNOLOGÍAS
         </p>
-        <p class="tile_p">
-          <img class="tile_img" src="app/assets/tile3.png" />
+        <p id="tile_p_3" class="tile_p" tabindex="2.1.3">
+          <img
+            class="tile_img"
+            title="Ventaja 3"
+            aria-describedby="tile_p_3"
+            src="app/assets/tile3.png"
+          />
           Más de 20.000 CLIENTES confían en nosotros
         </p>
       </aside>
