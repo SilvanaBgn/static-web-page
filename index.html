@@ -12,30 +12,46 @@
     <link rel="stylesheet" href="app/views/css/footer.css" />
   </head>
   <body>
-    <header>
-      <img class="logo" alt="Logo de LTV Service" src="app/assets/logo.svg" />
-      <button id="menu_button" alt="Botón de menú" type="menu">
-        <img src="app/assets/menu-closed.svg" />
+    <header tabindex="1" aria-label="Encabezado">
+      <img
+        class="logo"
+        alt="Logo de LTV Service"
+        src="app/assets/logo.svg"
+        tabindex="1.2"
+      />
+      <button
+        id="menu_button"
+        alt="Menú"
+        type="menu"
+        aria-controls="nav"
+        aria-expanded="false"
+        tabindex="1.3"
+      >
+        <img
+          title="Menú"
+          aria-labelledby="menu_button"
+          src="app/assets/menu-closed.svg"
+        />
       </button>
-      <nav class="nav_closed">
-        <a href="#home_section">
-          <img src="app/assets/home.svg" />
+      <nav id="nav" class="nav_closed">
+        <a id="nav_item1" href="#home_section" role="menuitem">
+          <img aria-labelledby="nav_item1" src="app/assets/home.svg" />
           Inicio
         </a>
-        <a href="#about_us_section">
-          <img src="app/assets/about-us.svg" />
+        <a id="nav_item2" href="#about_us_section" role="menuitem">
+          <img aria-labelledby="nav_item2" src="app/assets/about-us.svg" />
           Nosotros
         </a>
-        <a href="#location_section">
-          <img src="app/assets/location.svg" />
+        <a id="nav_item3" href="#location_section" role="menuitem">
+          <img aria-labelledby="nav_item3" src="app/assets/location.svg" />
           Ubicación
         </a>
-        <a href="#hours_section">
-          <img src="app/assets/hours.svg" />
+        <a id="nav_item4" href="#hours_section" role="menuitem">
+          <img aria-labelledby="nav_item4" src="app/assets/hours.svg" />
           Horarios
         </a>
-        <a href="#contact_section">
-          <img src="app/assets/contact.svg" />
+        <a id="nav_item5" href="#contact_section" role="menuitem">
+          <img aria-labelledby="nav_item5" src="app/assets/contact.svg" />
           Contacto
         </a>
       </nav>

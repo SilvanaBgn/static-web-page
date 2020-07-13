@@ -13,9 +13,11 @@ function toogleMenu(e) {
     menuNav.classList.remove("nav_opened");
     menuNav.classList.add("nav_closed");
     menuButtonImg.src = ASSETS_PATH + "menu-closed.svg";
+    menuButton.ariaExpanded = false;
   } else {
     menuNav.classList.remove("nav_closed");
     menuNav.classList.add("nav_opened");
     menuButtonImg.src = ASSETS_PATH + "menu-opened.svg";
+    menuButton.ariaExpanded = true;
   }
 }
