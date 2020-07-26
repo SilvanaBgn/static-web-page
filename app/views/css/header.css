@@ -26,7 +26,7 @@ header nav {
   position: absolute;
   top: 55px;
   width: 250px;
-  height: 100vh;
+  height: calc(100vh - 55px);
   padding: 25px;
 }
 .nav_closed {
