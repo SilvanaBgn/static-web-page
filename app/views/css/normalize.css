@@ -1,0 +1,25 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+body {
+  font-size: 10px;
+  line-height: 13px;
+  background-color: #edf2f8;
+}
+html {
+  min-width: 300px;
+  min-height: 300px;
+}
+
+/* Family fonts */
+.serif {
+  font-family: "Times New Roman", Times, serif;
+}
+.sansserif {
+  font-family: Helvetica, Arial, sans-serif;
+  /* "Helvetica Neue", "Arial Nova", Helvetica, Arial, sans-serif; */
+}
+/* .monospace {
+  font-family: "Lucida Console", Courier, monospace;
+} */
