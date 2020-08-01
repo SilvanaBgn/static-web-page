@@ -4,7 +4,8 @@
   padding: 0;
 }
 body {
-  font: 10px/13px "Helvetica Neue", "Arial Nova", Helvetica, Arial, sans-serif;
+  font-size: 10px;
+  line-height: 13px;
   background-color: #edf2f8;
 }
 html {
@@ -17,7 +18,8 @@ html {
   font-family: "Times New Roman", Times, serif;
 }
 .sansserif {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Helvetica, Arial, sans-serif;
+  /* "Helvetica Neue", "Arial Nova", Helvetica, Arial, sans-serif; */
 }
 /* .monospace {
   font-family: "Lucida Console", Courier, monospace;
