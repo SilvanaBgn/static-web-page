@@ -1,6 +1,2 @@
 html-in-html
 app/config/colors.json
-app/views/footer.html
-app/views/header.html
-app/views/sections.html
-app/views/modules/hero.html
