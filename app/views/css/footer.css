@@ -1,6 +1,6 @@
 /* ---------------------FOOTER--------------------- */
 footer {
-  background-color: #272727;
+  background-color: var(--grey-main-color);
   box-sizing: border-box;
   left: 0;
   bottom: 0;
@@ -11,12 +11,12 @@ footer {
   overflow: auto; /* cause of floats' sons */
 }
 footer div {
-  border-top: 1px solid #494949;
+  border-top: 1px solid var(--grey-medium-color);
   padding: 10px 15px 10px;
 }
 footer p {
   font-size: 12px;
-  color: #edf2f8;
+  color: var(--grey-ulight-color);
   line-height: 20px;
 }
 footer p,
