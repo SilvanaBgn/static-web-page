@@ -1,0 +1,25 @@
+:root {
+  --blue-dark-color: #001531;
+  --blue-main-color: #0c2c5a;
+  --blue-medium-color: #113d7d;
+  --blue-light-color: #d2e1f9;
+  --blue-ulight-color: #f5f9fe;
+
+  /* TODO */
+  /* red */
+  --red-dark-color: #a0181a;
+  --red-main-color: #e62326;
+  --red-medium-color: #ec494c;
+  --red-light-color: #ff9d9e;
+  --red-ulight-color: #ffe2e2;
+  /* yellow */
+
+  /* TODO update with scalar grays */
+  --black-color: #000000;
+  --grey-dark-color: #121212;
+  --grey-main-color: #272727;
+  --grey-medium-color: #494949;
+  --grey-light-color: #bbbbbb;
+  --grey-ulight-color: #efefef;
+  --white-color: #ffffff;
+}
