@@ -24,7 +24,7 @@ template.innerHTML = `
   <div>
     <p data-year="&nbsp;2020">(C) Copyright</p>
     <p data-splitter="&nbsp;|&nbsp;">
-      Diseño y desarrollo: Holis Silvana B. García
+      Diseño y desarrollo: Silvana B. García
     </p>
     <p>Gracias por confiar en nosotros</p>
   </div>
