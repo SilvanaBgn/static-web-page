@@ -1,0 +1,55 @@
+.hero_mod {
+  position: relative;
+  color: var(--black-color);
+  /* background: url('../../../assets/hero-image-ByN.jpg') no-repeat; */
+  /* background-size: 100%; */
+}
+
+.hero_img {
+  max-width: 100%;
+  width: 90vw;
+  height: auto;
+  min-width: 270px;
+}
+
+.hero_text {
+  position: absolute;
+  text-shadow: 5px 3px 8px var(--white-color);
+}
+
+.hero_text p {
+  margin: 0 0 25px;
+}
+
+@media (min-width: 1024px) {
+  .hero_text {
+    top: 40px;
+    left: 40px;
+    font: 700 2.5vw/3vw Helvetica, Arial, sans-serif;
+  }
+}
+
+@media (min-width: 680px) and (max-width: 1023px) {
+  .hero_text {
+    top: 30px;
+    left: 30px;
+    font: 700 20px/24px Helvetica, Arial, sans-serif;
+  }
+}
+@media (min-width: 420px) and (max-width: 679px) {
+  .hero_text p {
+    margin: 0 0 10px;
+  }
+  .hero_text {
+    top: 20px;
+    left: 20px;
+    font: 700 16px/20px Helvetica, Arial, sans-serif;
+  }
+}
+@media (min-width: 300px) and (max-width: 419px) {
+  .hero_text {
+    top: 10px;
+    left: 10px;
+    font: 700 14px/16px Helvetica, Arial, sans-serif;
+  }
+}
