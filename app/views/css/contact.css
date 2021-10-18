@@ -1,0 +1,26 @@
+#contact_section p {
+  font: 18px/22px Helvetica, Arial, sans-serif;
+  margin: 20px 0;
+}
+@media screen and (max-width: 680px) {
+  #contact_section p {
+    font: 14px/18px Helvetica, Arial, sans-serif;
+    margin: 10px 0;
+  }
+}
+#contact_section p::before {
+  content: '';
+  display: inline-block;
+  margin: -5px 10px;
+  width: 24px;
+  height: 24px;
+}
+#contact_section .p_phone::before {
+  background-image: url('../../assets/icons/contact.svg');
+}
+#contact_section .p_wpp::before {
+  background-image: url('../../assets/icons/whatsapp.svg');
+}
+#contact_section .p_email::before {
+  background-image: url('../../assets/icons/email.svg');
+}

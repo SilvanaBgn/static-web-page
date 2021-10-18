@@ -1,0 +1,16 @@
+.section_title {
+  margin-top: calc(70px - var(--header-height) - 10px);
+  margin-bottom: 20px;
+  padding-top: calc(var(--header-height) + 10px);
+  font: 700 28px/32px Helvetica, Arial, sans-serif;
+  color: var(--blue-main-color);
+}
+
+.section_title::after {
+  content: '';
+  display: block;
+  margin: 2px 0 0 1px;
+  width: 30px;
+  height: 3px;
+  background-color: var(--blue-main-color);
+}

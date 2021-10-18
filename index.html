@@ -10,8 +10,10 @@
     <link rel="stylesheet" href="app/views/css/normalize.css" />
     <link rel="stylesheet" href="app/views/css/header.css" />
     <link rel="stylesheet" href="app/views/css/footer.css" />
+    <link rel="stylesheet" href="app/views/css/contact.css" />
     <link rel="stylesheet" href="app/views/css/colors.css" />
     <link rel="stylesheet" href="app/views/modules/css/tile.css" />
+    <link rel="stylesheet" href="app/views/css/index.css" />
   </head>
   <body class="sansserif">
     <header tabindex="1" aria-label="Encabezado">
@@ -58,7 +60,18 @@
         </p>
       </aside>
     </section>
-    <section id="about_us_section" style="height: 100px; background: yellowgreen;"></section>
+    <!-- <section id="about_us_section" style="height: 100px; background: yellowgreen;"></section> -->
+    <section id="contact_section" style="height: 1000px;">
+      <h2 class="section_title">Contacto</h2>
+      <p class="p_phone" aria-label="Telephone number">(03442) 433026</p>
+      <p class="p_wpp" aria-label="Whatsapp number">(03442) 15123456</p>
+      <form>
+        <p class="p_email" aria-label="Email message">O déjanos tu mensaje!</p>
+        <label for="message_email">Email:
+          <input type="email" name="Email" id="message_email" pattern="^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$" required>
+        </label>
+      </form>
+    </section>
     <footer>
       <div>
         <p data-year="&nbsp;2020">(C) Copyright</p>
