@@ -65,11 +65,19 @@
       <h2 class="section_title">Contacto</h2>
       <p class="p_phone" aria-label="Telephone number">(03442) 433026</p>
       <p class="p_wpp" aria-label="Whatsapp number">(03442) 15123456</p>
-      <form>
-        <p class="p_email" aria-label="Email message">O déjanos tu mensaje!</p>
-        <label for="message_email">Email:
-          <input type="email" name="Email" id="message_email" pattern="^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$" required>
+      <p class="p_email" aria-label="Email message">O déjanos tu mensaje!</p>
+      <form class="form_message">
+        <label for="email_name">Nombre:
+          <input type="text" name="Email" id="email_name" pattern="^[\w-\.]+$" required>
         </label>
+        <label for="email_surname">Apellido:
+          <input type="text" name="Email" id="email_surname">
+        </label>
+        <label for="email_email">Email:
+          <input type="email" name="Email" id="email_email" pattern="^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$" required/>
+        </label>
+        <textarea name="message_text" cols="40" rows="5" maxlength="350" minlength="10" placeholder="Escriba aquí su mensaje ..." spellcheck="true" required></textarea>
+        <input type="submit"/>
       </form>
     </section>
     <footer>
