@@ -1,9 +1,12 @@
 /* ---------------------HEADER--------------------- */
+:root {
+  --header-height: 55px;
+}
 header {
   background-color: var(--white-color);
   box-shadow: var(--grey-ulight) 0px 2px 10px;
   width: 100%;
-  height: 55px;
+  height: var(--header-height);
   top: 0;
   position: fixed;
   display: flex;
