@@ -61,23 +61,23 @@
       </aside>
     </section>
     <!-- <section id="about_us_section" style="height: 100px; background: yellowgreen;"></section> -->
-    <section id="contact_section" style="height: 1000px;">
-      <h2 class="section_title">Contacto</h2>
-      <p class="p_phone" aria-label="Telephone number">(03442) 433026</p>
-      <p class="p_wpp" aria-label="Whatsapp number">(03442) 15123456</p>
+    <section id="contact_section">
+      <h2 class="section_title">Contáctanos</h2>
+      <a class="a_phone" aria-label="Telephone number" href="tel:+543442470401">(03442) 433026</a>
+      <a class="a_wpp" aria-label="Whatsapp number" href="https://api.whatsapp.com/send?phone=+543442470401">(03442) 15123456</a>
       <p class="p_email" aria-label="Email message">O déjanos tu mensaje!</p>
-      <form class="form_message">
+      <form id="form_message" class="form_message">
         <label for="email_name">Nombre:
-          <input type="text" name="Email" id="email_name" pattern="^[\w-\.]+$" required>
+          <input type="text" name="Name" id="email_name" pattern="[a-zA-Z0-9_.+-]+">
         </label>
         <label for="email_surname">Apellido:
-          <input type="text" name="Email" id="email_surname">
+          <input type="text" name="Surname" id="email_surname">
         </label>
         <label for="email_email">Email:
-          <input type="email" name="Email" id="email_email" pattern="^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$" required/>
+          <input name="Email" id="email_email" pattern="[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,64}" value="silbelg@gmail.com" required/>
         </label>
-        <textarea name="message_text" cols="40" rows="5" maxlength="350" minlength="10" placeholder="Escriba aquí su mensaje ..." spellcheck="true" required></textarea>
-        <input type="submit"/>
+        <textarea name="message_text" cols="40" rows="5" maxlength="350" minlength="10" placeholder="Escriba aquí su mensaje ..." spellcheck="true"></textarea>
+        <input type="submit">
       </form>
     </section>
     <footer>
@@ -91,5 +91,6 @@
     </footer>
     <!-- JS: -->
     <script type="text/javascript" src="app/js/menu.js"></script>
+    <script type="text/javascript" src="app/js/contact.js"></script>
   </body>
 </html>
