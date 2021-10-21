@@ -1,17 +1,23 @@
-#contact_section p::before {
+.a_phone,
+.a_wpp {
+  display: block;
+}
+.a_phone::before,
+.a_wpp::before,
+.p_email::before {
   content: '';
   display: inline-block;
   margin: -5px 10px;
   width: 24px;
   height: 24px;
 }
-#contact_section .p_phone::before {
+.a_phone::before {
   background-image: url('../../assets/icons/contact.svg');
 }
-#contact_section .p_wpp::before {
+.a_wpp::before {
   background-image: url('../../assets/icons/whatsapp.svg');
 }
-#contact_section .p_email::before {
+.p_email::before {
   background-image: url('../../assets/icons/email.svg');
 }
 
@@ -43,7 +49,9 @@
   }
 }
 @media (min-width: 420px) {
-  #contact_section p {
+  .a_phone,
+  .a_wpp,
+  .p_email {
     font: 18px/22px Helvetica, Arial, sans-serif;
     margin: 30px 0 0;
   }
@@ -55,7 +63,9 @@
   }
 }
 @media screen and (max-width: 420px) {
-  #contact_section p {
+  .a_phone,
+  .a_wpp,
+  .p_email {
     font: 14px/18px Helvetica, Arial, sans-serif;
     margin: 20px 0 0;
   }
