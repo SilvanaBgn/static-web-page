@@ -16,6 +16,12 @@
     <link rel="stylesheet" href="app/views/modules/css/hero.css" />
     <link rel="stylesheet" href="app/views/css/index.css" />
   </head>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init("user_jjI65mthDNq2QGm1qkDuD");
+    })();
+  </script>
   <body class="sansserif">
     <header tabindex="1" aria-label="Encabezado">
       <img class="logo" alt="Logo de LTV Service" src="app/assets/logo.svg" tabindex="1.2" />
@@ -80,15 +86,15 @@
       <p class="p_email" aria-label="Email message">O déjanos tu mensaje!</p>
       <form id="form_message" class="form_message">
         <label for="email_name">Nombre:
-          <input type="text" name="Name" id="email_name" pattern="[a-zA-Z0-9_.+-]+">
+          <input type="text" id="name" name="name" pattern="[a-zA-Z0-9_.+-]+" required>
         </label>
         <label for="email_surname">Apellido:
-          <input type="text" name="Surname" id="email_surname">
+          <input type="text" id="surname" name="surname">
         </label>
         <label for="email_email">Email:
-          <input name="Email" id="email_email" pattern="[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,64}" value="silbelg@gmail.com" required/>
+          <input type="email" id="from_email" name="email" pattern="[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,64}" required/>
         </label>
-        <textarea name="message_text" cols="40" rows="5" maxlength="350" minlength="10" placeholder="Escriba aquí su mensaje ..." spellcheck="true"></textarea>
+        <textarea id="message" name="message" cols="40" rows="5" maxlength="350" minlength="10" placeholder="Escriba aquí su mensaje ..." spellcheck="true"></textarea>
         <input type="submit">
       </form>
     </section>

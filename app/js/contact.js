@@ -1,16 +1,16 @@
-// const form = document.getElementById("form_message");
-const form = document.querySelector("#form_message");
-form.addEventListener('submit', sendMail);
+document.getElementById("form_message").addEventListener('submit', sendMail);
 
 function sendMail(e) {
   e.preventDefault();
-  Email.send({
-    SecureToken : "C973D7AD-F097-4B95-91F4-40ABC5567812",
-    To : 'silbelg@gmail.com',
-    From : "you@isp.com",
-    Subject : "This is the subject",
-    Body : "And this is the body"
-  }).then(
-    message => alert(message)
-  );
+  const tempParams = {
+    name: document.getElementById("name").value,
+    surname: document.getElementById("surname").value,
+    from_email: document.getElementById("from_email").value,
+    replay_to: document.getElementById("from_email").value,
+    message: document.getElementById("message").value
+  };
+
+  emailjs.send("service_jhr1jur","template_u27q6lj", tempParams).then((res,err)=>{
+    err ? console.log("Error:", err) : console.log("Success:", res);
+  });
 }
