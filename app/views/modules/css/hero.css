@@ -58,3 +58,10 @@
     font: 700 14px/16px Helvetica, Arial, sans-serif;
   }
 }
+
+.split_module {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 5px 10px;
+  background-color: lightcoral;
+}
