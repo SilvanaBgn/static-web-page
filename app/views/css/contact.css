@@ -1,0 +1,103 @@
+.a_phone,
+.a_wpp {
+  display: block;
+  width: fit-content;
+  color: var(--black-color);
+  text-decoration: none;
+  cursor: pointer;
+}
+.a_phone:hover,
+.a_wpp:hover {
+  color: var(--blue-main-color);
+  font-weight: 530;
+}
+.a_phone::before,
+.a_wpp::before,
+.p_email::before {
+  content: '';
+  display: inline-block;
+  margin: -5px 10px;
+  width: 24px;
+  height: 24px;
+}
+.a_phone::before {
+  background-image: url('../../assets/icons/contact.svg');
+}
+.a_wpp::before {
+  background-image: url('../../assets/icons/whatsapp.svg');
+}
+.p_email::before {
+  background-image: url('../../assets/icons/email.svg');
+}
+
+form {
+  margin: 10px 0 0 44px;
+  max-width: 680px;
+}
+form label {
+  display: block;
+  margin-top: 25px;
+}
+form label input {
+  float: right;
+  max-width: 600px;
+  height: 30px;
+  margin: -5px 0 5px;
+  padding: 5px;
+  color: var(--grey-main-color);
+}
+form textarea {
+  width: 100%;
+  margin-top: 10px;
+  padding: 10px;
+  color: var(--grey-main-color);
+  resize: none;
+}
+.form_message_button {
+  display: block;
+  margin-top: 10px;
+  margin-left: auto;
+  padding: 5px 10px;
+}
+
+@media (min-width: 680px) {
+  form label input {
+    width: 85%;
+  }
+}
+@media (min-width: 420px) {
+  .a_phone,
+  .a_wpp,
+  .p_email {
+    font: 18px/22px Helvetica, Arial, sans-serif;
+    margin: 30px 0 0;
+  }
+  form label {
+    font: 16px/20px Helvetica, Arial, sans-serif;
+  }
+  form label input {
+    width: 80%;
+  }
+  form label input,
+  form textarea {
+    font: 14px/18px Helvetica, Arial, sans-serif;
+  }
+}
+@media screen and (max-width: 420px) {
+  .a_phone,
+  .a_wpp,
+  .p_email {
+    font: 14px/18px Helvetica, Arial, sans-serif;
+    margin: 20px 0 0;
+  }
+  form label {
+    font: 13px/15px Helvetica, Arial, sans-serif;
+  }
+  form label input {
+    width: 75%;
+  }
+  form label input,
+  form textarea {
+    font: 12px/14px Helvetica, Arial, sans-serif;
+  }
+}

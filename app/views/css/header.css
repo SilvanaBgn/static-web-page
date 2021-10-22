@@ -1,14 +1,18 @@
 /* ---------------------HEADER--------------------- */
+:root {
+  --header-height: 70px;
+}
 header {
-  background-color: var(--white-color);
-  box-shadow: var(--grey-ulight) 0px 2px 10px;
-  width: 100%;
-  height: 55px;
-  top: 0;
   position: fixed;
+  top: 0;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding-left: 20px;
+  width: 100%;
+  height: var(--header-height);
+  background-color: var(--white-color);
+  box-shadow: var(--grey-ulight) 0px 2px 10px;
   z-index: 100;
 }
 .logo {
@@ -26,7 +30,7 @@ header > button {
 header nav {
   background-color: var(--blue-light-color);
   position: absolute;
-  top: 55px;
+  top: var(--header-height);
   width: 250px;
   height: calc(100vh - 55px);
   padding: 25px;
@@ -52,15 +56,4 @@ nav a:hover {
 }
 nav a > img {
   padding-right: 8px;
-}
-
-/* ---------------------HOME SECTION--------------------- */
-section {
-  width: 90%;
-  margin-left: auto;
-  margin-right: auto;
-}
-section:nth-of-type(1) {
-  /* min-height: 1000px; */
-  margin-top: 60px;
 }
