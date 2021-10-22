@@ -1,4 +1,5 @@
-document.getElementById("form_message").addEventListener('submit', sendMail);
+const form = document.getElementById("form_message");
+form.addEventListener('submit', sendMail);
 
 function sendMail(e) {
   e.preventDefault();
@@ -10,6 +11,7 @@ function sendMail(e) {
     message: document.getElementById("message").value
   };
 
+  form.reset();
   emailjs.send("service_jhr1jur","template_u27q6lj", tempParams).then((res,err)=>{
     err ? console.log("Error:", err) : console.log("Success:", res);
   });

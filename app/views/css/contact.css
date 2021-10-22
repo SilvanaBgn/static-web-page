@@ -21,30 +21,38 @@
   background-image: url('../../assets/icons/email.svg');
 }
 
-.form_message {
+form {
   margin: 10px 0 0 44px;
   max-width: 680px;
 }
-.form_message label {
+form label {
   display: block;
   margin-top: 25px;
 }
-.form_message label input {
+form label input {
   float: right;
   max-width: 600px;
   height: 30px;
   margin: -5px 0 5px;
+  padding: 5px;
+  color: var(--grey-main-color);
 }
-.form_message textarea {
+form textarea {
   width: 100%;
   margin-top: 10px;
   padding: 10px;
-  font: inherit;
   color: var(--grey-main-color);
   resize: none;
 }
+.form_message_button {
+  display: block;
+  margin-top: 10px;
+  margin-left: auto;
+  padding: 5px 10px;
+}
+
 @media (min-width: 680px) {
-  .form_message label input {
+  form label input {
     width: 85%;
   }
 }
@@ -55,11 +63,15 @@
     font: 18px/22px Helvetica, Arial, sans-serif;
     margin: 30px 0 0;
   }
-  .form_message {
+  form label {
     font: 16px/20px Helvetica, Arial, sans-serif;
   }
-  .form_message label input {
+  form label input {
     width: 80%;
+  }
+  form label input,
+  form textarea {
+    font: 14px/18px Helvetica, Arial, sans-serif;
   }
 }
 @media screen and (max-width: 420px) {
@@ -69,10 +81,14 @@
     font: 14px/18px Helvetica, Arial, sans-serif;
     margin: 20px 0 0;
   }
-  .form_message {
-    font: 14px/20px Helvetica, Arial, sans-serif;
+  form label {
+    font: 13px/15px Helvetica, Arial, sans-serif;
   }
-  .form_message label input {
+  form label input {
     width: 75%;
+  }
+  form label input,
+  form textarea {
+    font: 12px/14px Helvetica, Arial, sans-serif;
   }
 }
