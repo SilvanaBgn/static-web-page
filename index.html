@@ -74,10 +74,10 @@
       <p class="p_email" aria-label="Email message">O déjanos tu mensaje!</p>
       <form id="form_message">
         <label for="email_name">Nombre:
-        <input type="text" id="name" name="name" pattern="[a-zA-Z0-9_.+-]+" title="Ingrese un nombre válido" required>
+        <input type="text" id="name" name="name" maxlength="20" minlength="3" pattern="[a-zA-Z0-9_.+-]+" title="Ingrese un nombre válido" required>
         </label>
         <label for="email_surname">Apellido:
-          <input type="text" id="surname" name="surname" pattern="[a-zA-Z0-9_.+-]+" title="Ingrese un apellido válido">
+          <input type="text" id="surname" name="surname" maxlength="20" minlength="3" pattern="[a-zA-Z0-9_.+-]+" title="Ingrese un apellido válido">
         </label>
         <label for="email_email">Email:
           <input type="email" id="from_email" name="email" pattern="[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,64}" title="Ingrese un email válido" required />
