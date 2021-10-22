@@ -72,7 +72,7 @@
       <a class="a_phone" aria-label="Telephone number" href="tel:+543442470401">(03442) 433026</a>
       <a class="a_wpp" aria-label="Whatsapp number" href="https://api.whatsapp.com/send?phone=+543442470401">(03442) 15123456</a>
       <p class="p_email" aria-label="Email message">O déjanos tu mensaje!</p>
-      <form id="form_message" class="form_message">
+      <form id="form_message">
         <label for="email_name">Nombre:
           <input type="text" id="name" name="name" pattern="[a-zA-Z0-9_.+-]+" required>
         </label>
@@ -83,7 +83,7 @@
           <input type="email" id="from_email" name="email" pattern="[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,64}" required/>
         </label>
         <textarea id="message" name="message" cols="40" rows="5" maxlength="350" minlength="10" placeholder="Escriba aquí su mensaje ..." spellcheck="true"></textarea>
-        <input type="submit">
+        <input class="form_message_button" type="submit" value="Enviar mensaje">
       </form>
     </section>
     <footer>
