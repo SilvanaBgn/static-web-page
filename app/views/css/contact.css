@@ -1,6 +1,15 @@
 .a_phone,
 .a_wpp {
   display: block;
+  width: fit-content;
+  color: var(--black-color);
+  text-decoration: none;
+  cursor: pointer;
+}
+.a_phone:hover,
+.a_wpp:hover {
+  color: var(--blue-main-color);
+  font-weight: 530;
 }
 .a_phone::before,
 .a_wpp::before,
