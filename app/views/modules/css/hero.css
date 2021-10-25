@@ -68,6 +68,7 @@
 .split_module {
   display: flex;
   justify-content: space-evenly;
+  margin-bottom: 30px;
   padding: 7px 10px;
   background-color: var(--white-color);
 }
