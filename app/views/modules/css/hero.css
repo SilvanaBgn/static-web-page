@@ -62,6 +62,30 @@
 .split_module {
   display: flex;
   justify-content: space-evenly;
-  padding: 5px 10px;
-  background-color: lightcoral;
+  padding: 7px 10px;
+  background-color: var(--white-color);
+}
+
+.split_module a {
+  font: 18px/22px Helvetica, Arial, sans-serif;
+  text-decoration: none;
+  cursor: pointer;
+}
+.split_module a:hover {
+  font-weight: 700;
+}
+.split_mod_philips {
+  color: var(--blue-main-color);
+}
+.split_mod_aoc {
+  color: var(--black-color);
+}
+.split_mod_bgh {
+  color: var(--grey-main-color);
+}
+.split_mod_telefunken {
+  color: var(--red-main-color);
+}
+.split_mod_hisense {
+  color: var(--blue-medium-color);
 }
