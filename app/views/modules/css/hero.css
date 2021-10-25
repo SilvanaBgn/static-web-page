@@ -88,7 +88,17 @@
   color: var(--blue-medium-color);
 }
 
-@media (min-width: 420px) {
+@media (min-width: 1024px) {
+  .hero_text {
+    top: 30px;
+    left: 40px;
+    font: 700 2.5vw/3vw Helvetica, Arial, sans-serif;
+  }
+  .split_module a {
+    font: 2.5vw/3vw Helvetica, Arial, sans-serif;
+  }
+}
+@media (min-width: 420px) and (max-width: 1023px) {
   .split_module {
     padding: 7px 10px;
   }
