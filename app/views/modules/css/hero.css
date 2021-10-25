@@ -66,7 +66,6 @@
   background-color: var(--white-color);
 }
 .split_module a {
-  font: 18px/22px Helvetica, Arial, sans-serif;
   text-decoration: none;
   cursor: pointer;
 }
@@ -87,4 +86,21 @@
 }
 .split_mod_hisense {
   color: var(--blue-medium-color);
+}
+
+@media (min-width: 420px) {
+  .split_module {
+    padding: 7px 10px;
+  }
+  .split_module a {
+    font: 18px/22px Helvetica, Arial, sans-serif;
+  }
+}
+@media screen and (max-width: 419px) {
+  .split_module {
+    padding: 5px;
+  }
+  .split_module a {
+    font: 13px/16px Helvetica, Arial, sans-serif;
+  }
 }
