@@ -70,7 +70,7 @@
   .hero_text {
     --hero-text-top: 10px;
     left: 10px;
-    font: 700 16px/18px Helvetica, Arial, sans-serif;
+    font: 16px/18px Helvetica, Arial, sans-serif;
   }
 }
 
