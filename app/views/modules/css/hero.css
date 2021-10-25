@@ -13,9 +13,9 @@
   max-height: 60vh;
   object-fit: cover; /* to crop the image */
 }
-
 .hero_text {
   position: absolute;
+  top: var(--hero-text-top);
   width: 50%;
   min-width: 250px;
   padding: 10px;
@@ -23,6 +23,15 @@
   border-radius: 0 0 10px;
   text-shadow: 5px 3px 5px var(--white-color);
   box-shadow: 10px 10px 30px black;
+  animation: textShow 3s;
+}
+@keyframes textShow {
+  from {
+    top: -500px;
+  }
+  to {
+    top: var(--hero-text-top);
+  }
 }
 
 .hero_text p {
@@ -31,7 +40,7 @@
 
 @media (min-width: 1024px) {
   .hero_text {
-    top: 30px;
+    --hero-text-top: 30px;
     left: 40px;
     font: 2.5vw/3vw Helvetica, Arial, sans-serif;
   }
@@ -39,7 +48,7 @@
 
 @media (min-width: 680px) and (max-width: 1023px) {
   .hero_text {
-    top: 30px;
+    --hero-text-top: 30px;
     left: 30px;
     font: 20px/24px Helvetica, Arial, sans-serif;
   }
@@ -49,7 +58,7 @@
     margin: 0 0 10px;
   }
   .hero_text {
-    top: 20px;
+    --hero-text-top: 20px;
     left: 20px;
     font: 18px/22px Helvetica, Arial, sans-serif;
   }
@@ -59,7 +68,7 @@
     margin: 0 0 10px;
   }
   .hero_text {
-    top: 10px;
+    --hero-text-top: 10px;
     left: 10px;
     font: 16px/18px Helvetica, Arial, sans-serif;
   }
