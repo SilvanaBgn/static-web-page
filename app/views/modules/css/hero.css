@@ -95,11 +95,6 @@
 }
 
 @media (min-width: 1024px) {
-  .hero_text {
-    top: 30px;
-    left: 40px;
-    font: 700 2.5vw/3vw Helvetica, Arial, sans-serif;
-  }
   .split_module a {
     font: 2vw/2.5vw Helvetica, Arial, sans-serif;
   }
