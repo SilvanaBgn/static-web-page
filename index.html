@@ -8,16 +8,45 @@
     <link rel="icon" type="image/svg" href="app/assets/logo.svg" />
     <!-- CSS: -->
     <link rel="stylesheet" href="app/views/css/normalize.css" />
+    <link rel="stylesheet" href="app/views/css/header.css" />
+    <link rel="stylesheet" href="app/views/css/footer.css" />
     <link rel="stylesheet" href="app/views/css/section.css" />
-    <link rel="stylesheet" href="app/views/css/tile.css" />
+    <link rel="stylesheet" href="app/views/css/contact.css" />
     <link rel="stylesheet" href="app/views/css/colors.css" />
+    <link rel="stylesheet" href="app/views/modules/css/tile.css" />
+    <link rel="stylesheet" href="app/views/modules/css/hero.css" />
+    <link rel="stylesheet" href="app/views/css/index.css" />
     <!-- JS -->
     <script type="module" src="app/views/modules.js"></script>
   </head>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init("user_jjI65mthDNq2QGm1qkDuD");
+    })();
+  </script>
   <body class="sansserif">
     <my-header></my-header>
     <section id="home_section" role="region" title="Sección Home" tabindex="2">
-      <aside id="tiles" aria-label="Ventajas competitivas" role="grid">
+      <aside id="hero" aria-label="¿Qué hacemos?">
+        <div id="hero_mod_div" class="hero_mod">
+          <img class="hero_img" title="¿Qué hacemos?" aria-describedby="hero_mod_div" src="app/assets/hero-image.jpg" />
+          <div class="hero_text">
+            <p>LED, LCD, TV Color, Monitores</p>
+            <p>Controles remotos</p>
+            <p>Microondas</p>
+            <p>Repuestos</p>
+          </div>
+        </div>
+      </aside>
+      <div class="split_module">
+        <a class="split_mod_philips" href="www.philips.com">PHILIPS</a>
+        <a class="split_mod_aoc" href="https://latin.aoc.com">AOC</a>
+        <a class="split_mod_telefunken" href="https://telefunken.com">TELEFUNKEN</a>
+        <a class="split_mod_bgh" href="https://bgh.com.ar">BGH</a>
+        <a class="split_mod_hisense" href="https://www.hisense.com">HISENSE</a>
+      </div>
+      <aside id="tiles" class="container" aria-label="Ventajas competitivas" role="grid">
         <p id="tile_p_1" class="tile_p" tabindex="2.1.1">
           <img class="tile_img" title="Ventaja 1" aria-describedby="tile_p_1" src="app/assets/tile1.png" />
           Presupuestos<br />SIN CARGO
@@ -32,7 +61,39 @@
         </p>
       </aside>
     </section>
-    <section id="about_us_section" style="height: 100px; background: yellowgreen;"></section>
+    <section id="about_us_section" class="container">
+      <h2 class="section_title">Quiénes somos</h2>
+      <div class="split_module">
+        <p>Atendemos todas las tarjetas</p>
+        <!-- logo VISA -->
+        <!-- logo MAESTRO -->
+        <!-- logo AMEX -->
+        <!-- logo NARANJA -->
+        <!-- etc -->
+      </div>
+    </section>
+    <section id="contact_section" class="container">
+      <h2 class="section_title">Contáctanos</h2>
+      <a class="a_phone" aria-label="Telephone number" href="tel:+543442470401">(03442) 433026</a>
+      <a class="a_wpp" aria-label="Whatsapp number" href="https://api.whatsapp.com/send?phone=+543442470401">(03442) 15123456</a>
+      <p class="p_email" aria-label="Email message">O déjanos tu mensaje!</p>
+      <form id="form_message">
+        <label for="email_name">Nombre:
+          <input type="text" id="name" name="name" maxlength="20" minlength="3" pattern="[a-zA-Z0-9_.+-]+" title="Ingrese un nombre válido" required>
+        </label>
+        <label for="email_surname">Apellido:
+          <input type="text" id="surname" name="surname" maxlength="20" minlength="3" pattern="[a-zA-Z0-9_.+-]+" title="Ingrese un apellido válido">
+        </label>
+        <label for="email_email">Email:
+          <input type="email" id="from_email" name="email" pattern="[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,64}" title="Ingrese un email válido" required />
+        </label>
+        <textarea id="message" name="message" cols="40" rows="5" maxlength="350" minlength="10" placeholder="Escriba aquí su mensaje ..." spellcheck="true"></textarea>
+        <input class="form_message_button" type="submit" value="Enviar mensaje">
+      </form>
+    </section>
     <my-footer></my-footer>
+    <!-- JS: -->
+    <script type="text/javascript" src="app/js/menu.js"></script>
+    <script type="text/javascript" src="app/js/contact.js"></script>
   </body>
 </html>
