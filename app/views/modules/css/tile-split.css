@@ -1,0 +1,118 @@
+/* Tiles */
+aside#tiles {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 15px;
+}
+p.tile_p {
+  text-align: center;
+  width: 80%;
+  height: auto;
+  min-width: 85px;
+}
+img.tile_img {
+  width: inherit;
+  max-width: 120px;
+  height: auto;
+  display: block;
+  margin: auto;
+}
+
+@media (min-width: 1024px) {
+  p.tile_p {
+    width: 180px;
+    font-size: 18px;
+    line-height: 22px;
+    margin: 0 10px;
+  }
+}
+
+@media (min-width: 680px) and (max-width: 1024px) {
+  p.tile_p {
+    width: 180px;
+    font-size: 16px;
+    line-height: 20px;
+    margin: 0 10px;
+  }
+  img.tile_img {
+    height: 120px;
+    width: 120px;
+  }
+}
+@media (min-width: 420px) and (max-width: 680px) {
+  p.tile_p {
+    font-size: 2.4vw;
+    line-height: 3vw;
+    margin: 0 6px;
+  }
+}
+@media screen and (max-width: 420px) {
+  p.tile_p {
+    font-size: 10px;
+    line-height: 15px;
+    margin: 0 3px;
+  }
+}
+
+/* Split module & about-us */
+.split_module {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 15px;
+  padding: 7px 10px;
+  background-color: var(--white-color);
+}
+.split_module a {
+  text-decoration: none;
+  cursor: pointer;
+}
+.split_module a:hover {
+  font-weight: 700;
+}
+.split_mod_philips {
+  color: var(--blue-main-color);
+}
+.split_mod_aoc {
+  color: var(--black-color);
+}
+.split_mod_bgh {
+  color: var(--grey-main-color);
+}
+.split_mod_telefunken {
+  color: var(--red-main-color);
+}
+.split_mod_hisense {
+  color: var(--blue-medium-color);
+}
+.about_us_p {
+  padding-bottom: 20px;
+}
+
+@media (min-width: 1024px) {
+  .split_module a {
+    font: 2vw/2.5vw Helvetica, Arial, sans-serif;
+  }
+  .split_module p,
+  .about_us_p {
+    font: 18px/22px Helvetica, Arial, sans-serif;
+  }
+}
+@media (min-width: 420px) and (max-width: 1023px) {
+  .split_module a {
+    font: 18px/22px Helvetica, Arial, sans-serif;
+  }
+  .split_module p,
+  .about_us_p {
+    font: 16px/20px Helvetica, Arial, sans-serif;
+  }
+}
+@media screen and (max-width: 419px) {
+  .split_module {
+    padding: 5px;
+  }
+  .split_module a,
+  .split_module p,
+  .about_us_p {
+    font: 13px/16px Helvetica, Arial, sans-serif;
+  }
+}
