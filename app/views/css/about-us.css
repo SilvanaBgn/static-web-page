@@ -3,28 +3,28 @@
   margin: 20px 10px;
 }
 .about_us_item {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
+  /* display: flex; */
+  /* align-items: center; */
+  /* justify-content: flex-start; */
   padding: 10px;
   background-color: var(--white-color);
 }
-.about_us_item::before {
+/* .about_us_item::before {
   content: '';
   order: 1;
   height: 100px;
   width: 2px;
   background-color: var(--grey-light-color);
-}
+} */
 .about_us_item .about_us_p {
   order: 2;
   padding: 0;
   min-width: 200px;
 }
-.about_us_p_img {
+/* .about_us_p_img {
   display: block;
   width: inherit;
   max-width: 200px;
   height: auto;
   margin-right: 20px;
-}
+} */

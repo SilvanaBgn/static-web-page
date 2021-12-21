@@ -84,9 +84,6 @@ img.tile_img {
 .split_mod_hisense {
   color: var(--blue-medium-color);
 }
-.about_us_p {
-  padding-bottom: 20px;
-}
 
 @media (min-width: 1024px) {
   .split_module a {
