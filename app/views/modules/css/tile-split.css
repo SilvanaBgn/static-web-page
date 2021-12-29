@@ -84,35 +84,9 @@ img.tile_img {
 .split_mod_hisense {
   color: var(--blue-medium-color);
 }
-.about_us_p {
-  padding-bottom: 20px;
-}
 
-@media (min-width: 1024px) {
-  .split_module a {
-    font: 2vw/2.5vw Helvetica, Arial, sans-serif;
-  }
-  .split_module p,
-  .about_us_p {
-    font: 18px/22px Helvetica, Arial, sans-serif;
-  }
-}
-@media (min-width: 420px) and (max-width: 1023px) {
-  .split_module a {
-    font: 18px/22px Helvetica, Arial, sans-serif;
-  }
-  .split_module p,
-  .about_us_p {
-    font: 16px/20px Helvetica, Arial, sans-serif;
-  }
-}
 @media screen and (max-width: 419px) {
   .split_module {
     padding: 5px;
-  }
-  .split_module a,
-  .split_module p,
-  .about_us_p {
-    font: 13px/16px Helvetica, Arial, sans-serif;
   }
 }

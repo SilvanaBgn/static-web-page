@@ -1,30 +1,39 @@
-#about_us_section div,
-#about_us_section p {
-  margin: 20px 10px;
-}
 .about_us_item {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
+  margin: 0 10px 20px;
   padding: 10px;
   background-color: var(--white-color);
 }
-.about_us_item::before {
+/* .about_us_item::before {
   content: '';
   order: 1;
   height: 100px;
   width: 2px;
   background-color: var(--grey-light-color);
-}
-.about_us_item .about_us_p {
+} */
+.about_us_p {
   order: 2;
-  padding: 0;
   min-width: 200px;
+  margin: 20px 10px;
+  padding: 0;
 }
-.about_us_p_img {
+/* .about_us_p_img {
   display: block;
   width: inherit;
   max-width: 200px;
   height: auto;
   margin-right: 20px;
+} */
+.credit_cards_p {
+  margin: 40px 10px 10px;
+}
+.credit_cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 25px;
+  margin: 0 10px;
+}
+.credit_card_img {
+  width: 70px;
+  height: 70px;
 }
