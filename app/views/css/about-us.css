@@ -3,9 +3,6 @@
   margin: 20px 10px;
 }
 .about_us_item {
-  /* display: flex; */
-  /* align-items: center; */
-  /* justify-content: flex-start; */
   padding: 10px;
   background-color: var(--white-color);
 }
@@ -16,7 +13,7 @@
   width: 2px;
   background-color: var(--grey-light-color);
 } */
-.about_us_item .about_us_p {
+.about_us_p {
   order: 2;
   padding: 0;
   min-width: 200px;
@@ -28,7 +25,11 @@
   height: auto;
   margin-right: 20px;
 } */
-.about_us_credit {
+.credit_module {
+  display: flex;
+  justify-content: space-evenly;
+}
+.credit_card_img {
   width: 100px;
   height: 100px;
   margin-left: 20px;

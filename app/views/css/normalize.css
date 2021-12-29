@@ -24,3 +24,26 @@ html {
 /* .monospace {
   font-family: "Lucida Console", Courier, monospace;
 } */
+
+@media (min-width: 1024px) {
+  a.responsive_text {
+    font: 2vw/2.5vw Helvetica, Arial, sans-serif;
+  }
+  p.responsive_text {
+    font: 18px/22px Helvetica, Arial, sans-serif;
+  }
+}
+@media (min-width: 420px) and (max-width: 1023px) {
+  a.responsive_text {
+    font: 18px/22px Helvetica, Arial, sans-serif;
+  }
+  p.responsive_text {
+    font: 16px/20px Helvetica, Arial, sans-serif;
+  }
+}
+@media screen and (max-width: 419px) {
+  a.responsive_text,
+  p.responsive_text {
+    font: 13px/16px Helvetica, Arial, sans-serif;
+  }
+}
