@@ -10,10 +10,11 @@
     <link rel="stylesheet" href="app/views/css/normalize.css" />
     <link rel="stylesheet" href="app/views/css/header.css" />
     <link rel="stylesheet" href="app/views/css/footer.css" />
+    <link rel="stylesheet" href="app/views/modules/css/hero.css" />
+    <link rel="stylesheet" href="app/views/modules/css/tile-split.css" />
+    <link rel="stylesheet" href="app/views/css/about-us.css" />
     <link rel="stylesheet" href="app/views/css/contact.css" />
     <link rel="stylesheet" href="app/views/css/colors.css" />
-    <link rel="stylesheet" href="app/views/modules/css/tile.css" />
-    <link rel="stylesheet" href="app/views/modules/css/hero.css" />
     <link rel="stylesheet" href="app/views/css/index.css" />
   </head>
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
@@ -64,11 +65,11 @@
         </div>
       </aside>
       <div class="split_module">
-        <a class="split_mod_philips" href="www.philips.com">PHILIPS</a>
-        <a class="split_mod_aoc" href="https://latin.aoc.com">AOC</a>
-        <a class="split_mod_telefunken" href="https://telefunken.com">TELEFUNKEN</a>
-        <a class="split_mod_bgh" href="https://bgh.com.ar">BGH</a>
-        <a class="split_mod_hisense" href="https://www.hisense.com">HISENSE</a>
+        <a class="split_mod_philips responsive_text" href="www.philips.com">PHILIPS</a>
+        <a class="split_mod_aoc responsive_text" href="https://latin.aoc.com">AOC</a>
+        <a class="split_mod_telefunken responsive_text" href="https://telefunken.com">TELEFUNKEN</a>
+        <a class="split_mod_bgh responsive_text" href="https://bgh.com.ar">BGH</a>
+        <a class="split_mod_hisense responsive_text" href="https://www.hisense.com">HISENSE</a>
       </div>
       <aside id="tiles" class="container" aria-label="Ventajas competitivas" role="grid">
         <p id="tile_p_1" class="tile_p" tabindex="2.1.1">
@@ -87,13 +88,24 @@
     </section>
     <section id="about_us_section" class="container">
       <h2 class="section_title">Quiénes somos</h2>
-      <div class="split_module">
-        <p>Atendemos todas las tarjetas</p>
-        <!-- logo VISA -->
-        <!-- logo MAESTRO -->
-        <!-- logo AMEX -->
-        <!-- logo NARANJA -->
-        <!-- etc -->
+      <p class="about_us_p responsive_text">Somos el <b>servicio técnico líder</b> de la zona, con más de <b>25 años</b> en el rubro tenológico.</p>
+      <div class="about_us_item">
+        <!-- <img class="about_us_p_img" title="Últimas tecnologías" aria-describedby="tile_p_1" src="app/assets/smart-work.png" /> -->
+        <p class="about_us_p responsive_text">Trabajamos con las <b>últimas tecnologías</b>. Las marcas oficiales respaldan nuestro trabajo.</p>
+      </div>
+      <div class="about_us_item">
+        <!-- <img class="about_us_p_img" title="Servicio de calidad" aria-describedby="tile_p_1" src="app/assets/star.png" /> -->
+        <p class="about_us_p responsive_text">Brindamos un <b>servicio de calidad</b>, en donde nuestros <b>clientes</b> son la <b>prioridad</b>.</p>
+      </div>
+      <p class="credit_cards_p responsive_text">Atendemos todas las tarjetas:</p>
+      <div class="credit_cards">
+        <img class="credit_card_img" src="app/assets/icons/credit-cards/visa.svg">
+        <img class="credit_card_img" src="app/assets/icons/credit-cards/mastercard.svg">
+        <img class="credit_card_img" src="app/assets/icons/credit-cards/amex.svg">
+        <img class="credit_card_img" src="app/assets/icons/credit-cards/maestro.svg">
+        <img class="credit_card_img" src="app/assets/icons/credit-cards/credife.png">
+        <img class="credit_card_img" src="app/assets/icons/credit-cards/consumax.png">
+        <img class="credit_card_img" src="app/assets/icons/credit-cards/naranja.svg">
       </div>
     </section>
     <section id="contact_section" class="container">

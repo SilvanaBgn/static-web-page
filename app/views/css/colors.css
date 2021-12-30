@@ -1,11 +1,10 @@
 :root {
+  /* blue */
   --blue-dark-color: #001531;
   --blue-main-color: #0c2c5a;
   --blue-medium-color: #113d7d;
   --blue-light-color: #d2e1f9;
   --blue-ulight-color: #f5f9fe;
-
-  /* TODO */
   /* red */
   --red-dark-color: #a0181a;
   --red-main-color: #e62326;
@@ -13,8 +12,9 @@
   --red-light-color: #ff9d9e;
   --red-ulight-color: #ffe2e2;
   /* yellow */
-
-  /* TODO update with scalar grays */
+  --yellow-main-color: #e6af00;
+  --yellow-medium-color: #e6cd00;
+  /* gray */
   --black-color: #000000;
   --grey-dark-color: #121212;
   --grey-main-color: #272727;

@@ -1,3 +1,4 @@
+/* Tiles */
 aside#tiles {
   display: flex;
   justify-content: space-around;
@@ -50,5 +51,42 @@ img.tile_img {
     font-size: 10px;
     line-height: 15px;
     margin: 0 3px;
+  }
+}
+
+/* Split module & about-us */
+.split_module {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 15px;
+  padding: 7px 10px;
+  background-color: var(--white-color);
+}
+.split_module a {
+  text-decoration: none;
+  cursor: pointer;
+}
+.split_module a:hover {
+  font-weight: 700;
+}
+.split_mod_philips {
+  color: var(--blue-main-color);
+}
+.split_mod_aoc {
+  color: var(--black-color);
+}
+.split_mod_bgh {
+  color: var(--grey-main-color);
+}
+.split_mod_telefunken {
+  color: var(--red-main-color);
+}
+.split_mod_hisense {
+  color: var(--blue-medium-color);
+}
+
+@media screen and (max-width: 419px) {
+  .split_module {
+    padding: 5px;
   }
 }
