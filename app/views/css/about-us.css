@@ -1,6 +1,7 @@
 .about_us_item {
   margin: 0 10px 20px;
   padding: 10px;
+  color: var(--grey-main-color);
   background-color: var(--white-color);
 }
 /* .about_us_item::before {
@@ -29,11 +30,26 @@
 .credit_cards {
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start;
-  gap: 25px;
   margin: 0 10px;
 }
-.credit_card_img {
-  width: 70px;
-  height: 70px;
+
+@media (min-width: 420px) {
+  .credit_cards {
+    justify-content: flex-start;
+    gap: 10px 25px;
+  }
+  .credit_card_img {
+    width: 70px;
+    height: 70px;
+  }
+}
+@media screen and (max-width: 419px) {
+  .credit_cards {
+    justify-content: center;
+    gap: 2px 10px;
+  }
+  .credit_card_img {
+    width: 40px;
+    height: 40px;
+  }
 }
