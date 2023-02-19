@@ -1,6 +1,4 @@
 html-in-html
-app/views/footer.html
-app/views/header.html
 app/views/sections.html
 app/views/modules/hero.html
 # Logs

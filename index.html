@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!-- Icon for the window tab page: -->
     <link rel="icon" type="image/svg" href="app/assets/logo.svg" />
+    <!-- JS -->
+    <script type="module" src="app/views/modules.js"></script>
     <!-- CSS: -->
     <link rel="stylesheet" href="app/views/css/normalize.css" />
     <link rel="stylesheet" href="app/views/css/header.css" />
@@ -23,34 +25,7 @@
     })();
   </script>
   <body class="sansserif">
-    <header tabindex="1" aria-label="Encabezado">
-      <img class="logo" alt="Logo de LTV Service" src="app/assets/logo.svg" tabindex="1.2" />
-      <button id="menu_button" alt="Menú" type="menu" aria-controls="nav" aria-expanded="false" tabindex="1.3">
-        <img title="Menú" aria-labelledby="menu_button" src="app/assets/menu-closed.svg" />
-      </button>
-      <nav id="nav" class="nav_closed">
-        <a id="nav_item1" href="#home_section" role="menuitem">
-          <img aria-labelledby="nav_item1" src="app/assets/home.svg" />
-          Inicio
-        </a>
-        <a id="nav_item2" href="#about_us_section" role="menuitem">
-          <img aria-labelledby="nav_item2" src="app/assets/about-us.svg" />
-          Quiénes somos
-        </a>
-        <a id="nav_item3" href="#location_section" role="menuitem">
-          <img aria-labelledby="nav_item3" src="app/assets/location.svg" />
-          Ubicación
-        </a>
-        <a id="nav_item4" href="#hours_section" role="menuitem">
-          <img aria-labelledby="nav_item4" src="app/assets/hours.svg" />
-          Horarios
-        </a>
-        <a id="nav_item5" href="#contact_section" role="menuitem">
-          <img aria-labelledby="nav_item5" src="app/assets/contact.svg" />
-          Contáctanos
-        </a>
-      </nav>
-    </header>
+    <my-header></my-header>
     <section id="home_section" role="region" title="Sección Home" tabindex="2">
       <aside id="hero" aria-label="¿Qué hacemos?">
         <div id="hero_mod_div" class="hero_mod">
@@ -115,15 +90,7 @@
         <input class="form_message_button" type="submit" value="Enviar mensaje">
       </form>
     </section>
-    <footer>
-      <div>
-        <p data-year="&nbsp;2020">(C) Copyright</p>
-        <p data-splitter="&nbsp;|&nbsp;">
-          Diseño y desarrollo: Silvana B. García
-        </p>
-        <p>Gracias por confiar en nosotros</p>
-      </div>
-    </footer>
+    <my-footer></my-footer>
     <!-- JS: -->
     <script type="text/javascript" src="app/js/menu.js"></script>
     <script type="text/javascript" src="app/js/contact.js"></script>
